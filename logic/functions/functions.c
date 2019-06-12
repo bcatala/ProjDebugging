@@ -82,14 +82,15 @@ void planTrip(List *l){
 
 
 void readWholeFile(FILE * f, List * l) {
-	int nDestinations, i;
+	char[3] nDestinations, i=0;
 
-	fscanf(f, "%d", &nDestinations);
-
+	fscanf(f, "%s", &nDestinations);
+/*
 	for (i = 0; i < nDestinations; i++) {
 		Destination d = readFromFile(f);
 		insert(l, d);
 	}
+	*/
 }
 
 void readNewFile(List * l) {
