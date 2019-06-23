@@ -46,7 +46,7 @@ void insert(List * l, Destination d) {
 
 		do {
 			//Avancem al següent element i mirem si aquest encara l'hem de saltar
-			l->poi[i] = l->poi[i]->next[i];
+			l->poi[i] == l->poi[i]->next[i];
 
 			if (l->poi[i] = l->last) {
 				break;
