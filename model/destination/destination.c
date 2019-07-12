@@ -86,7 +86,7 @@ double checkAltitudeInDirection(double ** travelAltitude, int i, int j, int dire
 // Recorre recursivament la matriu buscant la mínima altitud i retornant el total recorregut
 // Podeu assumir que les dades sempre donaran un camí decreixent en altitud de 0, 0  a n-1, n-1
 double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
-	if (i == n - 1 && j == n - 1) {
+	if (i == n - 1 || j == n - 1) {
 		return travelAltitude[i][j];
 	}
 
