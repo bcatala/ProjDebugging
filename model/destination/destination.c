@@ -94,7 +94,7 @@ double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
 	double minAlt = 0;
 
 	for (int k = 0; k < DIRECTIONS; k++) {
-		double alt = checkAltitudeInDirection(travelAltitude, i, j, k, n);
+		double alt = checkAltitudeInDirection(travelAltitude, i+1, j+1, k, n);
 
 		if (alt < minAlt) {
 			minAlt = alt;
@@ -104,7 +104,7 @@ double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
 
 	advanceInDirection(&newI, &newJ, min);
 
-	return travelAltitude[i][j] + travelThroughAltitude(travelAltitude, i, j, n);
+	return travelAltitude[i][j] + travelThroughAltitude(travelAltitude, i+1, j+1, n);
 }
 
 // Retorna una estimació del temps de viatge des de BCN segons l'altitud
