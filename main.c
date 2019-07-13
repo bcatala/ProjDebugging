@@ -26,9 +26,11 @@ int main() {
 	printWelcomeLine();
 
 	do {
-		printMenu();
+		
 
 		do {
+			
+			printMenu();
 			option = askUserForOption();
 
 			if (!isCorrect(option)) {
