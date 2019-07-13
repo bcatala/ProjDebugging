@@ -89,12 +89,12 @@ void readWholeFile(FILE * f, List * l) {
 	int i=0;
 
 	fscanf(f, "%d", &nDestinations);
-/*
+
 	for (i = 0; i < nDestinations; i++) {
 		Destination d = readFromFile(f);
 		insert(l, d);
 	}
-	*/
+	
 }
 
 void readNewFile(List * l) {
