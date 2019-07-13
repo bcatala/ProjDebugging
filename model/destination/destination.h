@@ -6,7 +6,7 @@
 #define BCN_LAT 41.3818
 #define BCN_LON 2.1685
 
-#define EARTH_RADIUS 6371000.0
+#define EARTH_RADIUS 6371.0
 
 typedef struct {
 	double lat;
