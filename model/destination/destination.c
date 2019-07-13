@@ -121,7 +121,7 @@ double getTimeFromBcn(Destination dest) {
 void mapAltitude(double ** travelAltitude, char ** map, int i, int j, int n) {
 	map[i + 1][j + 1] = ' ';
 
-	if (i == n - 1 && j == n - 1) {
+	if (i == n - 1 || j == n - 1) {
 		return;
 	}
 
