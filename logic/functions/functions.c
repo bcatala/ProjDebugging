@@ -121,6 +121,7 @@ void readNewFile(List * l) {
 	} else {
 		printFileError(input);
 	}
+	fclose(f);
 
 }
 
