@@ -105,6 +105,7 @@ void readNewFile(List * l) {
 	if (f != NULL) {
 		*l = create();
 		readWholeFile(f, l);
+		printf("\nChange of database\n");
 	} else {
 		printFileError(input);
 	}
