@@ -163,5 +163,12 @@ void destroy(List * l) {
 	while (!isEmpty(*l)) {
 		removePoi(l, 0);
 	}
+	
+	free(l->first);
+    free(l->last);
+    free(l->poi[0]);
+    free(l->poi[1]);
+    free(l->poi[2]);
+    free(l->poi[3]);
 
 }
