@@ -182,12 +182,12 @@ char * readString(FILE * file) {
 		i++;
 		if (i >= size) {
 			size *= 2;
-			ret=resize(&ret, size);
+			resize(&ret, size);
 		}
 		fscanf(file, "%c", &tmp);
 	} while(tmp != '\n');
 
-	ret=resize(&ret, i + 1);
+	resize(&ret, i + 1);
 
 
 	return ret;
