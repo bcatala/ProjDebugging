@@ -178,8 +178,8 @@ char * readString(FILE * file) {
 
 	fscanf(file, "%c", &tmp);
 	do {
-		i++[ret] = tmp;
-
+		ret[i] = tmp;
+		i++;
 		if (i >= size) {
 			size *= 2;
 			resize(&ret, size);
