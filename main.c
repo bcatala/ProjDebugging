@@ -41,6 +41,7 @@ int main() {
 		execute(option, &l);
 	} while (!isExit(option));
 
+	printf("\n     Exit the program\n");
 	destroy(&l);
 
 	return 0;
