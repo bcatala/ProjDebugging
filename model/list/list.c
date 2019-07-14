@@ -94,7 +94,9 @@ void removePoi(List * l, int mode) {
 	// Comprovem que no estigui buida ni estiguem a un fantasma
 	if (!isEmpty(*l) && l -> poi[mode] != l -> last && l -> poi[mode] != l -> first) {
 		//Desem la posicio del node en memòria a un punter auxiliar, per no perdre'l
+		
 		Node * aux = l -> poi[mode];
+		freeAll(l->poi[mode]->dest);
 		int i;
 		//Deslliguem el node de la resta
 		for (i = 0; i < MAX_SORTING; i++) {
