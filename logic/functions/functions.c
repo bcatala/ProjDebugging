@@ -30,7 +30,19 @@ int comparePrices(const void * a, const void * b) {
 	double aValue = *((double *) a);
 	double bValue = *((double *) b);
 
-	return round(bValue + aValue);
+	int comp=0;
+    if(aValue<bValue){
+
+        comp=-1;
+    }else{
+        if(aValue>bValue){
+
+            comp=1;
+        }
+
+
+    }
+    return comp;
 }
 
 void planTrip(List *l){
